@@ -3,8 +3,8 @@ import cors from 'cors';
 import morgan from "morgan";
 import dotenv from 'dotenv';
 import { sequelize } from "./config/dbConfig.js";
-import testRoutes from "./controllers/testController.js";
-import userRoutes from './controllers/userController.js';
+import testRoutes from "./routes/testRoutes.js";
+import userRoutes from './routes/userRoutes.js';
 
 dotenv.config()
     const app = express();
